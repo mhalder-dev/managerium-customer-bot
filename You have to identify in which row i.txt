@@ -1,0 +1,6 @@
+You have to identify in which row is the sender id placed. From that row you will find the session id. If there is session id provide on that row, that means the thread is already created so you will take the 2nd router branch. The filter will be set as session id existed. And if there is no session id on that row, that means it is a new thread, so you will take the 1st router branch to create a new thread. The filter will be set as session id not existed.
+
+{
+  "session id":"{{3.`1`}}"
+  "sender id":"{{1.sender.id}}"
+}
